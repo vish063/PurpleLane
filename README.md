@@ -1,3 +1,3 @@
 This is front end build
 #Goto src and do npm install 
-Then npm start - this will start your server and will show the path with port to access the application, typically that would be  http://localhost:8000
+Then gulp start - this will build less files into .css and start your server. typically that would be  http://localhost:8000
