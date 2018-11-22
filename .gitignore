@@ -1,1 +1,4 @@
-"# PurpleLane" 
+# ignore all node modules
+**/node_modules
+**.idea
+**.gitignore

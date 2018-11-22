@@ -16,7 +16,18 @@
     "angular-ui-bootstrap": "2.5.0"
   },
   "devDependencies": {
-    "http-server": "^0.9.0"
+    "http-server": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-jslint-simple": "^1.0.2",
+    "gulp-less": "^3.3.2",
+    "gulp-merge": "^0.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-uglify": "^3.0.0",
+    "jshint-stylish": "^2.2.1"
   },
   "scripts": {
     "start": "http-server -a localhost -p 8000 -c-1"
