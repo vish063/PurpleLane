@@ -1,0 +1,25 @@
+{
+  "name": "PurpleLane",
+  "version": "0.0.0",
+  "description": "Purple Lane",
+  "license": "Proprietary license",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "@uirouter/angularjs": "^1.0.8",
+    "bootstrap": "~3.3.7",
+    "jquery": "^1.12.4",
+    "ng-tags-input": "^3.2.0",
+    "open-sans-fontface": "^1.4.0",
+    "angular-animate": "^1.5.6",
+    "angular-messages": "^1.5.6",
+    "angular-toastr": "^2.1.1",
+    "angular-ui-bootstrap": "2.5.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1"
+    }
+}
+

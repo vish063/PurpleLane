@@ -1,0 +1,225 @@
+<header layout="column" class="header">
+    <div class="topbar" layout="row">
+        <div flex="50" layout-align="center start">
+            <img id="logo" src="images/icons/logo.svg" />
+        </div>
+        <md-toolbar layout="row" layout-align="end" flex="50">
+            <md-button>HOME</md-button>
+            <md-button>SERVICES</md-button>
+            <md-button>ABOUT US</md-button>
+            <md-button>CONTACT</md-button>
+            <div><md-button id="login" class="btn-secondary">LOG IN/SIGN UP</md-button></div>
+        </md-toolbar>
+    </div>
+    <section class="header__info">
+        <div flex="40">
+            <p class="header__info__title">What is PurpleLane</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Euismod in pellentesque massa placerat.
+            </p>
+            <div class="header__info-buttons" layout="row">
+                <md-button class="btn-primary" flex="50">Find a mentor</md-button>
+                <md-button class="btn-secondary" flex="50">Join PurpleLane</md-button>
+            </div>
+
+        </div>
+    </section>
+</header>
+<section class="about-us">
+    <div class="about-us__title"> About Us </div>
+    <div layout="row" class="about-us__content">
+        <div flex class="about-us-video">
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div flex class="about-us-desc">
+            <p class="about-us-desc__title">What is Lorem Ipsum</p>
+            <p flex="60"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <!--<md-button class="about-us__more"> &lt;!&ndash;<md-icon class="material-icons  md-48">label</md-icon>&ndash;&gt; <span class="about-us__more__text">More</span></md-button>-->
+<!--            <md-button class="btn-primary btn-primary&#45;&#45;purple">
+                <div class="more-arrow">
+                    <div class="more-arrow-tail">More</div>
+                    <div class="more-arrow-head"></div>
+                </div>
+            </md-button>-->
+            <div class="more-arrow">
+                <div class="more-arrow-tail">More</div>
+                <div class="more-arrow-head"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how-it-works" >
+    <div class="how-it-works__title">
+        <div class="how-it-works__title__text">How it works</div>
+        <div class="how-it-works__actions">
+            <md-button class="btn-primary btn-primary--purple">Mentee</md-button>
+            <md-button class="btn-secondary btn-secondary-border-primary">Mentor</md-button>
+        </div>
+    </div>
+    <div class="how-it-works__visuals" layout="row">
+        <div class="how-it-works__visuals__guidance" layout="row" layout-align="end center">
+            <div layout="column" flex="40">
+                <div class="how-it-works__visuals__icon how-it-works__visuals__guidance-img">
+                </div>
+                <div class="how-it-works__visuals__title">Get Guidance</div>
+                <div class="how-it-works__visuals__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus at urna condimentum mattis</div>
+                <div class="how-it-works__visuals__btm-sep">
+                </div>
+            </div>
+        </div>
+        <div class="how-it-works__visuals__vrt-sep" layout="row" layout-align="center">
+            <div layout="column" layout-align="center center">
+                <div class="sep-circle"></div>
+                <div class="separator">
+                    <div class="sep-vl-line"></div>
+                </div>
+                <div class="sep-circle"></div>
+                <div class="separator">
+                    <div class="sep-vl-line"></div>
+                </div>
+                <div class="sep-circle"></div>
+            </div>
+        </div>
+        <div layout="column">
+            <div class="how-it-works__visuals__mentor" layout="row">
+                <div layout="column" flex="40" layout-align=" center end">
+                    <div class="how-it-works__visuals__icon how-it-works__visuals__mentor-img ">
+                    </div>
+                    <div class="how-it-works__visuals__title">Find perfect Mentor</div>
+                    <div class="how-it-works__visuals__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus at urna condimentum mattis</div>
+                    <div class="how-it-works__visuals__btm-sep">
+                    </div>
+                </div>
+            </div>
+            <div class="how-it-works__visuals__career" layout="row">
+                <div layout="column" flex="40" layout-align=" center end">
+                    <div class="how-it-works__visuals__icon how-it-works__visuals__career-img">
+                    </div>
+                    <div class="how-it-works__visuals__title">Get Guidance</div>
+                    <div class="how-it-works__visuals__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus at urna condimentum mattis</div>
+                    <div class="how-it-works__visuals__btm-sep">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+    <div class="testimonials__title"> Testimonials </div>
+    <div style="height: 305px;" class="testimonials__carousal">
+        <div uib-carousel active="active" interval="slideInterval" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides track by $index" index="$index">
+                <div class="carousal-multi" layout="row" flex="100">
+                    <div class="carousal-item" ng-repeat="s in slide" layout="row">
+                        <div class="carousel-img" layout="column" flex="35">
+                            <img ng-src="{{s.image}}" style="margin:auto;">
+                        </div>
+                        <div class="carousel-custom-caption" layout="column" flex="65" layout-align="center start">
+                            <div class="testimony">
+                                <p>{{s.review}}</p>
+                            </div>
+                            <div class="testimony-origin">
+                                <div>Name - {{s.name}}</div>
+                                <div>City - {{s.city}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div style="height: 305px">
+        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+                <div class="carousel-caption">
+                    <h4>Slide {{slide.id}}</h4>
+                    <p>{{slide.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</section>
+<footer class="footer">
+    <div class="subscribe"  layout="row" layout-align="center center" >
+        <div layout="row" class="subscribe__container" flex="40" layout-align="center center" >
+            <div class="subscribe__news-title" flex="50">Subscribe for news letter</div>
+            <div class="subscribe__news" layout="row" flex="50" layout-align="center center">
+                    <input type="text" name="email" ng-model="email"/>
+                    <md-button class="btn-primary btn-accept-email">
+                        <md-icon>near_me</md-icon>
+                    </md-button>
+            </div>
+        </div>
+    </div>
+    <div class="additional-details" layout="row">
+        <div class="address" layout="column" flex="33" >
+            <div class="address__title">PurpleLane</div>
+            <div class="address__line1">102,Alekya bliss, Camelot layout, Botanical gardens,</div>
+            <div class="address__line2">Kondapur,Hyderabad</div>
+            <div class="address__line3">Telangana,India,500084</div>
+            <br>
+            <div class="address__phone">+91-999-999-9999</div>
+            <br>
+            <div class="address__email">Info@Purplelane.com</div>
+        </div>
+        <div class="services" layout="column" flex="33">
+            <div class="services__title">Our Services</div>
+            <div class="service">
+                <a href="">Mobile App Development</a>
+            </div>
+            <div class="service">
+                <a href="">Web Application Development</a>
+            </div>
+            <div class="service">
+                <a href="">UI/UX Design</a>
+            </div>
+            <div class="service">
+                <a href="">Offshore Development Team</a>
+            </div>
+            <div class="service">
+                <a href="">Software Development Partner</a>
+            </div>
+        </div>
+        <div class="about-office" layout="column" flex="33">
+            <div class="services__title">About Office</div>
+            <div class="service">
+                <a href="">Company</a>
+            </div>
+            <div class="service">
+                <a href="">Portfolio</a>
+            </div>
+            <div class="service">
+                <a href="">Client Stories</a>
+            </div>
+            <div class="service">
+                <a href="">career</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-ribbon" layout="row">
+        <div class="connect" flex="33">
+            <img  src="../images/icons/043-facebook-1.png" class="social-icons"></img>
+            <img src="../images/icons/035-google-plus.png" class="social-icons"></img>
+            <img src="../images/icons/034-instagram.png" class="social-icons"></img>
+            <img src="../images/icons/031-linkedin.png" class="social-icons"></img>
+            <img src="../images/icons/013-twitter-1.png" class="social-icons"></img>
+        </div>
+        <div class="rights" flex="33">
+            <copyright>&copy; 2018 PurpleLane. All rights reserved.</copyright>
+        </div>
+        <div layout="row" flex="33">
+            <div class="service" flex="50">
+                <a href="">Privacy Policy</a>
+            </div>
+            <div class="service" flex="50">
+                <a href="">Terms of Service</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
