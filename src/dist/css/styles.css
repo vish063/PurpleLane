@@ -1,0 +1,15 @@
+/*
+  All common variable for background color, border color, z-indexes or any constants should  should declare here
+*/
+/*Usage*/
+/* Define all mixins ( Functions ) here, so that it can re used */
+/* Define all the buttons here*/
+.button {
+  color: red;
+}
+.text-button {
+  color: #000;
+}
+/* All common classes should go here */
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJ1dHRvbnMubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFDQTtFQUNBLFVBQUE7O0FBRUE7RUFDQSxXQUFBIiwiZmlsZSI6InN0eWxlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBEZWZpbmUgYWxsIHRoZSBidXR0b25zIGhlcmUqL1xyXG4uYnV0dG9uIHtcclxuICBjb2xvcjpyZWQ7XHJcbn1cclxuLnRleHQtYnV0dG9uIHtcclxuICBjb2xvcjogIzAwMDtcclxufSJdfQ== */

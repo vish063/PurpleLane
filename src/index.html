@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="lib/angular-material/angular-material.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="components/pl-home-page.css"/>
+        <link rel="stylesheet" type="text/css" href="components/home/pl-home.css"/>
         <link rel="stylesheet" href="dist/css/styles.css">
         <!-- Library files injection-->
         <script src="lib/angular/angular.js"></script>
@@ -17,16 +17,17 @@
         <script src="lib/angular/angular-aria.min.js"></script>
         <script src="lib/angular/angular-messages.min.js"></script>
         <script src="lib/angular/ui-bootstrap-tpls-2.5.0.min.js"></script>
-        <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
         <script src="lib/angular-material/angular-material.js"></script>
         <!--Application files-->
-        <script src="shared/js/app.js"></script>
-        <script src="components/pl.home-page.js"></script>
-
+        <script src="app.js"></script>
+        <script src="config.js"></script>
+        <script src="dist/js/all.js"></script>
     </head>
     <body ng-cloak>
         <div ng-controller="mainController">
-            <pl-home-page></pl-home-page>
+           <!-- <pl-home-page></pl-home-page>-->
+            <ui-view></ui-view>
         </div>
     </body>
 </html>

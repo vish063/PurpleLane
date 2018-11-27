@@ -1,9 +1,31 @@
-angular.module('pl.home-page',[
+angular.module('pl.home',[
     'ui.bootstrap',
-    'ngAnimate'])
-    .component('plHomePage', {
-        templateUrl: "components/pl-home-page.html",
+    'ngAnimate',
+    'ui.router',
+    'pl.home.login',
+    'pl.home.sign-up',
+    ])
+    .config(function($stateProvider, $urlRouterProvider){
+        $urlRouterProvider.otherwise('/home');
+        var loginState = {
+            name: "home.login",
+            url: '/login',
+            component: 'plLogin',
+        };
+        var signUpState = {
+            name: "home.signUp",
+            url: '/signUp',
+            component: 'plSignUp',
+        };
+        $stateProvider.state(signUpState);
+        $stateProvider.state(loginState);
+    })
+    .component('plHome', {
+        templateUrl: "components/home/pl-home.html",
         controller: function($scope){
+            $scope.$onInit = function(){
+                console.log("hello world again");
+            };
             console.log("I am in home page controller");
             $scope.slideInterval = 5000;
             $scope.noWrapSlides = true;
